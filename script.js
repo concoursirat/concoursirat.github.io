@@ -109,7 +109,7 @@ function calculateScore() {
 var timers = {
   'dal': { totalTime: 3 * 60 * 60, timeLeft: 3 * 60 * 60, isPaused: true, timer: null },
   'dfl': { totalTime: 3 * 60 * 60, timeLeft: 3 * 60 * 60, isPaused: true, timer: null },
-  'qcm': { totalTime: 1 * 60, timeLeft: 1 * 60, isPaused: true, timer: null }
+  'qcm': { totalTime: 30 * 60, timeLeft: 30 * 60, isPaused: true, timer: null }
 };
 
 function startPause(timerKey) {
