@@ -2082,6 +2082,62 @@ document.addEventListener('DOMContentLoaded', function() {
 });
   
 
+document.addEventListener('keydown', function (e) {
+  const allowedKeys = ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'];
+  const blockedModifiersWindows = ['Control', 'Alt', 'Shift', 'Meta'];
+  const blockedModifiersMac = ['Meta', 'Alt', 'Shift'];
+
+  const isWindows = navigator.platform.includes('Win');
+  const isMac = navigator.platform.includes('Mac');
+  const isAndroid = /Android/.test(navigator.userAgent);
+  const isiPhone = /iPhone/.test(navigator.userAgent) || /iPad/.test(navigator.userAgent);
+
+  if (
+    (isWindows && !allowedKeys.includes(e.key) && isBlockedModifier(e, blockedModifiersWindows)) ||
+    (isMac && !allowedKeys.includes(e.key) && isBlockedModifier(e, blockedModifiersMac)) ||
+    ((isAndroid || isiPhone) && !isAllowedMobileEvent(e))
+  ) {
+    e.preventDefault();
+  }
+});
+
+document.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+});
+
+document.addEventListener('touchstart', function (e) {
+  e.preventDefault();
+});
+
+document.addEventListener('touchmove', function (e) {
+  const startX = e.touches[0].clientX;
+  const startY = e.touches[0].clientY;
+  const endX = e.changedTouches[0].clientX;
+  const endY = e.changedTouches[0].clientY;
+
+  const deltaX = endX - startX;
+  const deltaY = endY - startY;
+
+  if (Math.abs(deltaX) > Math.abs(deltaY)) {
+    if (deltaX > 0) {
+    } else {
+    }
+  } else {
+    if (deltaY > 0) {
+    } else {
+    }
+  }
+});
+
+function isBlockedModifier(event, blockedModifiers) {
+  return blockedModifiers.some(modifier => event.getModifierState(modifier));
+}
+
+function isAllowedMobileEvent(event) {
+  return event.key === undefined && event.code === undefined && event.type === 'keydown';
+}
+
+
 function setdisclaimerContent() {
   var disclaimerContent = document.getElementById('disc');
 
