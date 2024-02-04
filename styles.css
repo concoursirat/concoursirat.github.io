@@ -149,6 +149,59 @@ button i {
   margin: 0;
 }
 
+#modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+#modal-content {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+button#concours {
+  background-color: #7f7f7f;
+  color: #fefefe;
+  width: 6rem;
+  height: 6rem;
+  font-size: 1rem;
+  line-height: 160px;
+  padding: 0;
+}
+
+button#notacceptButton {
+  background-color: #fff;
+  color: #333;
+  border: solid 1px #333;
+  font-weight: bold;
+  width: 10rem;
+  padding: 0.7rem;
+  margin: 2rem 2rem 1rem;
+}
+
+button#acceptButton,
+#acceptButton:disabled {
+  background-color: #7f7f7f;
+  color: #fefefe;
+  font-weight: bold;
+  width: 10rem;
+  padding: 0.7rem;
+  margin: 2rem 2rem 1rem;
+}
+
+#countdown {
+  color: #fefefe;
+  font-size: inherit;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -969,6 +1022,20 @@ span {
     font-size: 1.5rem;
   }
 
+  button#concours {
+    width: 5rem;
+    height: 5rem;
+    font-size: 0.8rem;
+    line-height: 135px;
+  }
+
+  button#notacceptButton,
+  button#acceptButton,
+  #acceptButton:disabled {
+    width: 8rem;
+    margin: 1rem 1rem 0.5rem;
+  }
+
   .modal-content {
     font-size: 0.7rem;
     width: 65%;
@@ -1006,6 +1073,19 @@ span {
     padding: 1rem 2rem;
     margin: 2rem auto;
     width: 90%;
+  }
+  button#concours {
+    width: 4rem;
+    height: 4rem;
+    font-size: 0.6rem;
+    line-height: 110px;
+
+  }
+  button#notacceptButton,
+  button#acceptButton,
+  #acceptButton:disabled {
+    width: 8rem;
+    margin: 0.5rem 0.5rem 0.25rem;
   }
   .disclaimer {
     flex-wrap: wrap;

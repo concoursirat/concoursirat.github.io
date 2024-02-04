@@ -1,3 +1,63 @@
+function setmodalContent() {
+  var modalContent = document.getElementById('modal-content');
+
+  modalContent.innerHTML = `
+    <button id="concours">concoursirat.</button>
+    <h3>Disclaimer.</h3>
+    <p>Ce site web est créé dans le seul but de regrouper des exemples de concours IRAT et d'aider les candidat(e)s dans leur préparation.</p>
+    <p><strong>Aucune affiliation :</strong></p>
+    <p>Ce site n'est affilié à aucun organisme, institution ou état spécifique. </p>
+    <p><strong>Responsabilité Limitée :</strong></p>
+    <p>L'auteur de ce site ne peut être tenu responsable de toute perte, dommage ou préjudice résultant de l'utilisation des informations fournies sur ce site.</p>
+    <p><strong>Changements Possibles :</strong></p>
+    <p>L'auteur se réserve le droit de modifier le contenu du site à tout moment sans préavis. Il est de la responsabilité des utilisateurs de vérifier régulièrement les mises à jour.</p>
+    <p>En utilisant ce site, vous acceptez les termes.</p>
+    <button id="notacceptButton" onclick="doNotAccept()">Ne pas Accepter</button>
+    <button id="acceptButton" onclick="acceptAndContinue()" disabled>Accepter et Continuer <span id="countdown"></span></button>
+  `;
+}
+  
+setmodalContent();
+
+var acceptButton = document.getElementById('acceptButton');
+var concours = document.getElementById('concours');
+var countdown = 10;
+
+window.onload = function() {
+  showModal();
+};
+
+function showModal() {
+  var modalContainer = document.getElementById('modal-container');
+  modalContainer.style.display = 'flex';
+
+  var countdownInterval = setInterval(function() {
+    if (countdown <= 0) {
+      clearInterval(countdownInterval);
+      acceptButton.removeAttribute('disabled');
+      acceptButton.style.backgroundColor = '#27ae60';
+      concours.style.backgroundColor = '#27ae60';
+      document.getElementById('countdown').textContent = '';
+    } else {
+      countdown--;
+      document.getElementById('countdown').textContent = ` ${countdown}`;
+    }
+  }, 1000); 
+}
+
+function acceptAndContinue() {
+  hideModal();
+}
+
+function doNotAccept() {
+  window.location.href = 'about:blank'; 
+}
+function hideModal() {
+  var modalContainer = document.getElementById('modal-container');
+  modalContainer.style.display = 'none';
+}
+
+
 function setpsContent() {
   var psContainer = document.getElementById('container-ps');
 
@@ -105,7 +165,6 @@ function calculateScore() {
   resultContainer.innerHTML = `<span>${weightedSum.toFixed(2)}</span> / ${totalPoints}`;
 }
 
-
 var timers = {
   'dal': { totalTime: 3 * 60 * 60, timeLeft: 3 * 60 * 60, isPaused: true, timer: null },
   'dfl': { totalTime: 3 * 60 * 60, timeLeft: 3 * 60 * 60, isPaused: true, timer: null },
@@ -169,6 +228,7 @@ function closeModal() {
   var modal = document.getElementById('timerModal');
   modal.style.display = 'none';
 }
+
 
 function setdalContent(yearIndex, contentObject) {
   //document.querySelectorAll('.year-content').forEach(function (content) {content.style.display = 'none';});
@@ -716,11 +776,11 @@ function showResults() {
     if (userAnswer === currentWord.correctAnswer) {
       correctNum++;
       if (userAnswer) {
-        answerContainer.querySelector(selector).parentElement.style.color = 'green';
+        answerContainer.querySelector(selector).parentElement.style.color = '#27ae60';
       }
     } else {
       if (userAnswer) {
-        answerContainer.querySelector(selector).parentElement.style.color = 'red'; 
+        answerContainer.querySelector(selector).parentElement.style.color = '#ff0000'; 
       }
     }
   });
@@ -2138,30 +2198,11 @@ function isAllowedMobileEvent(event) {
 }
 
 
-function setdisclaimerContent() {
-  var disclaimerContent = document.getElementById('disc');
-
-  disclaimerContent.innerHTML = `
-    <h4>concoursirat.</i></h4>
-    <p>Ce site web est créé dans le seul but de regrouper des exemples de concours IRAT et d'aider les individus dans leur préparation.</p>
-    <p><strong>Aucune affiliation :</strong><br>
-    Ce site n'est affilié à aucun organisme, institution ou état spécifique. </p>
-    <p><strong>Responsabilité Limitée :</strong><br>
-    L'auteur de ce site ne peut être tenu responsable de toute perte, dommage ou préjudice résultant de l'utilisation des informations fournies sur ce site.</p>
-    <p><strong>Changements Possibles :</strong><br>
-    L'auteur se réserve le droit de modifier le contenu du site à tout moment sans préavis. Il est de la responsabilité des utilisateurs de vérifier régulièrement les mises à jour.</p>
-    <p>En utilisant ce site, vous acceptez les termes de cette clause de non-responsabilité.</p>
-  `;
-}
-  
-setdisclaimerContent();
-
-
 function setfooterContent() {
   var footerContent = document.getElementById('footer');
   var currentYear = new Date().getFullYear();
   footerContent.innerHTML = `
-    <p>Copyright &copy; ${currentYear} concoursirat.</p>
+    <p>concoursirat. &copy; ${currentYear}</p>
   `;
 }
 
