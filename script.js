@@ -165,6 +165,66 @@ function calculateScore() {
   resultContainer.innerHTML = `<span>${weightedSum.toFixed(2)}</span> / ${totalPoints}`;
 }
 
+
+function settimerdalContent() {
+  var timerdalContent = document.getElementById('timer-dal');
+
+  timerdalContent.innerHTML = `
+    <h1><i class="fas fa-file-alt"></i> Dissertation en Langue Arabe</h1>
+    <div class="timer-controls" id="timer-controls-dal">
+      <button class="startPauseButton" onclick="startPause('dal')">
+        <i class="fas fa-play"></i>
+      </button>
+      <div class="timer-display" id="timer-dal-display">03:00:00</div>
+      <button class="resetButton" onclick="resetTimer('dal')">
+        <i class="fas fa-undo"></i>
+      </button>
+    </div>
+  `;
+}
+
+settimerdalContent();
+
+
+function settimerdflContent() {
+  var timerdflContent = document.getElementById('timer-dfl');
+
+  timerdflContent.innerHTML = `
+    <h1><i class="fas fa-file-alt"></i> Dissertation en Langue Étrangère</h1>
+    <div class="timer-controls" id="timer-controls-dfl">
+      <button class="startPauseButton" onclick="startPause('dfl')">
+        <i class="fas fa-play"></i>
+      </button>
+      <div class="timer-display" id="timer-dfl-display">03:00:00</div>
+      <button class="resetButton" onclick="resetTimer('dfl')">
+        <i class="fas fa-undo"></i>
+      </button>
+    </div>
+  `;
+}
+
+settimerdflContent();
+
+function settimerqcmContent() {
+  var timerqcmContent = document.getElementById('timer-qcm');
+
+  timerqcmContent.innerHTML = `
+    <h1><i class="fas fa-file-alt"></i> Questionnaire à choix multiples</h1>
+    <div class="timer-controls" id="timer-controls-qcm">
+      <button class="startPauseButton" onclick="startPause('qcm')">
+        <i class="fas fa-play"></i>
+      </button>
+      <div class="timer-display" id="timer-qcm-display">00:30:00</div>
+      <button class="resetButton" onclick="resetTimer('qcm')">
+        <i class="fas fa-undo"></i>
+      </button>
+    </div>
+  `;
+}
+
+settimerqcmContent();
+
+
 var timers = {
   'dal': { totalTime: 3 * 60 * 60, timeLeft: 3 * 60 * 60, isPaused: true, timer: null },
   'dfl': { totalTime: 3 * 60 * 60, timeLeft: 3 * 60 * 60, isPaused: true, timer: null },
@@ -281,7 +341,7 @@ switchButtondal2013.addEventListener("click", () => setdalContent(0, dalContent2
 
 var dalContent2024 = {
   2024: `
-    <h2>مواضيع حول مستجدات الحكامةوالتنميةالترابية :</h2>
+    <h2>مواضيع حول مستجدات الحكامة والتنمية الترابية :</h2>
     <p>الحكامة الجيدة</p>
     <p>الجهوية المتقدمة</p>
     <p>التنمية المستدامة</p>
@@ -2207,62 +2267,3 @@ function setfooterContent() {
 }
 
 setfooterContent();
-
-
-function settimerdalContent() {
-  var timerdalContent = document.getElementById('timer-dal');
-
-  timerdalContent.innerHTML = `
-    <h1><i class="fas fa-file-alt"></i> Dissertation en Langue Arabe</h1>
-    <div class="timer-controls" id="timer-controls-dal">
-      <button class="startPauseButton" onclick="startPause('dal')">
-        <i class="fas fa-play"></i>
-      </button>
-      <div class="timer-display" id="timer-dal-display">03:00:00</div>
-      <button class="resetButton" onclick="resetTimer('dal')">
-        <i class="fas fa-undo"></i>
-      </button>
-    </div>
-  `;
-}
-
-settimerdalContent();
-
-
-function settimerdflContent() {
-  var timerdflContent = document.getElementById('timer-dfl');
-
-  timerdflContent.innerHTML = `
-    <h1><i class="fas fa-file-alt"></i> Dissertation en Langue Arabe</h1>
-    <div class="timer-controls" id="timer-controls-dfl">
-      <button class="startPauseButton" onclick="startPause('dfl')">
-        <i class="fas fa-play"></i>
-      </button>
-      <div class="timer-display" id="timer-dfl-display">03:00:00</div>
-      <button class="resetButton" onclick="resetTimer('dfl')">
-        <i class="fas fa-undo"></i>
-      </button>
-    </div>
-  `;
-}
-
-settimerdflContent();
-
-function settimerqcmContent() {
-  var timerqcmContent = document.getElementById('timer-qcm');
-
-  timerqcmContent.innerHTML = `
-    <h1><i class="fas fa-file-alt"></i> Dissertation en Langue Arabe</h1>
-    <div class="timer-controls" id="timer-controls-qcm">
-      <button class="startPauseButton" onclick="startPause('qcm')">
-        <i class="fas fa-play"></i>
-      </button>
-      <div class="timer-display" id="timer-qcm-display">00:30:00</div>
-      <button class="resetButton" onclick="resetTimer('qcm')">
-        <i class="fas fa-undo"></i>
-      </button>
-    </div>
-  `;
-}
-
-settimerqcmContent();

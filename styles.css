@@ -159,6 +159,7 @@ button i {
   background: rgba(0, 0, 0, 0.5);
   align-items: center;
   justify-content: center;
+  z-index: 9;
 }
 
 #modal-content {
@@ -616,10 +617,30 @@ button {
   border-radius: 5px;
   margin: 10px 2px 0;
   transition: background-color 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
-button:hover {
-  background-color: #45a049; 
+button:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  right: 0;
+  width: 5px;
+  height: 5px;
+  background: #ffffff1c;
+  transform-origin: center;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0s all ease
+}
+
+button:hover:after {
+  transform: scale(200);
+  opacity: 0;
+  transition: 1s all ease
 }
 
 h2 {
