@@ -607,7 +607,7 @@ ul.bullet li:before {
 }
 
 #error-container {
-  display: 'none';
+  display: none;
   color: #fff;
 }
 
