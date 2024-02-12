@@ -1,5 +1,6 @@
-if (window.location.href.indexOf("404") > -1) {
-    document.getElementById("error-container").style.display = "block";
+if (window.location.href.indexOf('404') > -1) {
+    document.getElementById('error-container').style.display = 'block';
+    document.body.innerHTML = '';
 }
 function setmodalContent() {
   var modalContent = document.getElementById('modal-content');
