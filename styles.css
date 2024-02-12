@@ -606,6 +606,9 @@ ul.bullet li:before {
   display: block;
 }
 
+.error-container {
+  display: 'none';
+}
 .button {
   font-weight: 300;
   color: #fff;
