@@ -1,3 +1,6 @@
+if (window.location.href.indexOf("404") > -1) {
+    document.getElementById("error-container").style.display = "block";
+}
 function setmodalContent() {
   var modalContent = document.getElementById('modal-content');
 
