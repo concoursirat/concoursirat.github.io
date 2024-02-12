@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oops! Something is wrong.</title>
+<style>
+  @font-face{font-family:"CircularStd-Medium";font-display:swap;src:url(https://www.mimounjakhrouti.com/plugins/fonts/CircularStd-Medium.woff2) format("woff2"),url(https://www.mimounjakhrouti.com/plugins/fonts/CircularStd-Medium.ttf) format("truetype")}
+  body { 
+    font-family: 'CircularStd-Medium', sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+    text-align: center;
+  }
+  #error-container {
+    color: #7f7f7f;
+  }
+  #error-container > button {
+    font-family: 'CircularStd-Medium', sans-serif;
+    font-weight: 300;
+    color: #7f7f7f;
+    font-size: 1.2em;
+    text-decoration: none;
+    border: 1px solid #7f7f7f;
+    padding: .5em;
+    border-radius: 3px;
+  }
+  #error-container > button:hover {
+    background-color: #7f7f7f;
+    color: #fff;
+  }
+  #error-container > p {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 100;
+  }
+  #error-container > h1 {
+    text-align: center;
+    font-size: 15em;
+    font-weight: 100;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+  <div id="error-container">
+    <h1>404</h1>
+    <p>Oops! Something is wrong.</p>
+    <button onclick="window.location.href='https://mimounjakhrouti.com/'">Go back to the initial page, it's better.</button>
+  </div>
+</body>
+</html>
