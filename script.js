@@ -1,22 +1,3 @@
-  const hideBanner = elem => {
-    if(document.cookie = "cnb=bannerHidden") {
-        elem.parentElement.remove();
-    }
-};
-
-const showTopBanner = () => {
-    if(document.cookie.includes("bannerHidden") || window.innerWidth <= 600) return;
-    const cnTopBanner = document.createElement("div");
-    cnTopBanner.classList.add("cn-top-banner");
-    const html = `<span>Bon courage au concours</span>
-                  <i class='fa-solid fa-xmark' onclick='hideBanner(this);'></i>`;
-    
-    cnTopBanner.insertAdjacentHTML("beforeend", html);
-    document.body.insertAdjacentElement("afterbegin", cnTopBanner);
-}
-
-showTopBanner();
-
 function setmodalContent() {
   var modalContent = document.getElementById('modal-content');
 
