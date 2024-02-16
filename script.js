@@ -1001,7 +1001,7 @@ var qcmContent2023 = [
   {
     word: "7) Au Maroc, quel événement historique célèbre-t-on le 14 Août ?",
     answers: {
-      A: "La Fête la jeunesse",
+      A: "La Fête de la jeunesse",
       B: "La fête de l’indépendance",
       C: "L'institution de l’Union du Maghreb Arabe.",
       D: "La récupération des provinces d’Oued Eddahab et Sakia El Hamra",
