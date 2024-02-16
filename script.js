@@ -886,7 +886,7 @@ switchButtonqcm2020.addEventListener("click", () => {
 });
 
 
-const examTitles = ["QCM portant sur la culture et les connaissances générales : <br> <small>Histoire et au fonctionnement des institutions nationales, aux règles du comportement citoyen et à l’organisation et aux missions du ministère de l’intérieur</small>", "Epreuve des QCM - 26 février 2023 -", "Epreuve des QCM - 06 mars 2022 -", "Epreuve des QCM - 21 mars 2021 -", "Epreuve des QCM - 19 juillet 2020 -"];
+const examTitles = ["QCM portant sur la culture et les connaissances générales : <br> <small>Histoire et fonctionnement des institutions nationales, règles du comportement citoyen et organisation et missions du ministère de l’intérieur</small>", "Epreuve des QCM - 26 février 2023 -", "Epreuve des QCM - 06 mars 2022 -", "Epreuve des QCM - 21 mars 2021 -", "Epreuve des QCM - 19 juillet 2020 -"];
 
 function setExamTitle(index) {
   document.getElementById("examTitle").innerHTML = examTitles[index];
