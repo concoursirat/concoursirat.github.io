@@ -32,7 +32,7 @@ function showModal() {
   modalContainer.style.display = 'flex';
 
   var countdownInterval = setInterval(function() {
-    if (countdown <= 0) {
+    if (countdown <= 1) {
       clearInterval(countdownInterval);
       acceptButton.removeAttribute('disabled');
       acceptButton.style.backgroundColor = '#27ae60';
@@ -50,7 +50,7 @@ function acceptAndContinue() {
 }
 
 function doNotAccept() {
-  window.location.href = 'about:blank'; 
+  history.back(); 
 }
 function hideModal() {
   var modalContainer = document.getElementById('modal-container');
