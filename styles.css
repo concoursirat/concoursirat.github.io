@@ -503,6 +503,10 @@ p.indent {
   font-size: 1.1rem;
 }
 
+p.noindent {
+  text-indent: inherit;
+}
+
 p.context {
   font-weight: bold;
   text-indent: inherit;
@@ -988,6 +992,10 @@ span {
   
   p.indent {
     font-size: 0.55rem;
+  }
+
+  p.noindent {
+    text-indent: inherit;
   }
   
   p.context {
