@@ -546,7 +546,7 @@ var dflContent2024 = {
     <h2>CONCOURS D’ACCES AU CYCLE NORMAL <br>DE L’INSTITUT ROYAL DE L’ADMINISTRATION TERRITORIALE <br>(18 février 2024)</h2>
     <p class="subjects">Répondez, <u>au choix</u>, à <u>l’un</u> des sujets suivants :</p>
     <p class="subject bold">Sujet 1 : </p>
-    <p class="size 2024 noindent>Le Royaume du Maroc engage constamment des chantiers et des réformes   de différentes natures pour assurer le développement et le bien être des marocains tout en plaçant le citoyen au cœur du processus de développement et en faisant de lui la finalité essentielle des politiques publiques.</p>
+    <p class="size 2024 noindent">Le Royaume du Maroc engage constamment des chantiers et des réformes   de différentes natures pour assurer le développement et le bien être des marocains tout en plaçant le citoyen au cœur du processus de développement et en faisant de lui la finalité essentielle des politiques publiques.</p>
     <p class="size 2024 noindent">Quelles sont les principaux chantiers et réformes lancés et réalisés par le Maroc depuis l’intronisation de Sa Majesté Le Roi Mohammed VI, que Dieu L’Assiste, et quel est leur impact sur les citoyens et la société ?</p>
 
     <p class="subject bold">Sujet 2 :</p> 
