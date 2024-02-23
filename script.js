@@ -209,7 +209,7 @@ function settimerqcmContent() {
   var timerqcmContent = document.getElementById('timer-qcm');
 
   timerqcmContent.innerHTML = `
-    <h1><i class="fas fa-file-alt"></i> Questionnaire à choix multiples</h1>
+    <h1><i class="fas fa-clipboard-check"></i> Questionnaire à choix multiples</h1>
     <div class="timer-controls" id="timer-controls-qcm">
       <button class="startPauseButton" onclick="startPause('qcm')">
         <i class="fas fa-play"></i>
