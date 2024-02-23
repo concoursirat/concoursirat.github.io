@@ -344,11 +344,11 @@ var dalContent2024 = {
     <h2>مباراة ولوج السلك العادي <br>للمعهد الملكي للإدارة الترابية <br>(18 فبراير 2024)</h2>
     <p class="subjects">أجب على <u>أحد</u> الموضوعين التاليين:</p>
     <p class="subject ar bold">الموضوع الاختياري الأول:</p>
-    <p>تعكس الإصلاحات التي جرى إطلاقها في إطار ورش الجهوية المتقدمة بالمملكة المغربية إرادة السلطات العمومية في تمكين البلاد من تنظيم ترابي قادر على رفع التحديات الجديدة في مجال التنمية، وعلى الاستجابة بفعالية لإنتظارات المواطنات والمواطنين. وبعد البدء في تنزيل هذا الورش الملكي مند سنوات، جرى تحقيق تقدم مهم في مجال اللامركزية وتحديث هياكل الدولة وعلى مستوى التنمية السوسيو-اقتصادية والرأسمال البشري وحجم البنيات التحتية الأساسية والاستثمارات.</p>
-    <p>انطلاقا من المنجزات والمكتسبات، الى أي حد تمكن نموذج الحكامة الترابية المعتمد حاليا، من تحقيق الطموح المتمثل في جعل المجالات الترابية الفضاء الأمثل لإرساء وتكريس التنمية وتحقيق النتائج المرجوة، سواء على مستوى تقليص التفاوتات المجالية والاجتماعية، أو فيما يتعلق بمساهمة الجهات في خلق الثروة الوطنية؟</p>
+    <p class="noindent">تعكس الإصلاحات التي جرى إطلاقها في إطار ورش الجهوية المتقدمة بالمملكة المغربية إرادة السلطات العمومية في تمكين البلاد من تنظيم ترابي قادر على رفع التحديات الجديدة في مجال التنمية، وعلى الاستجابة بفعالية لإنتظارات المواطنات والمواطنين. وبعد البدء في تنزيل هذا الورش الملكي مند سنوات، جرى تحقيق تقدم مهم في مجال اللامركزية وتحديث هياكل الدولة وعلى مستوى التنمية السوسيو-اقتصادية والرأسمال البشري وحجم البنيات التحتية الأساسية والاستثمارات.</p>
+    <p class="noindent">انطلاقا من المنجزات والمكتسبات، الى أي حد تمكن نموذج الحكامة الترابية المعتمد حاليا، من تحقيق الطموح المتمثل في جعل المجالات الترابية الفضاء الأمثل لإرساء وتكريس التنمية وتحقيق النتائج المرجوة، سواء على مستوى تقليص التفاوتات المجالية والاجتماعية، أو فيما يتعلق بمساهمة الجهات في خلق الثروة الوطنية؟</p>
     <p class="subject ar bold">الموضوع الاختياري الثاني:</p>
-    <p>تَختبر القدرة على تدبير الوقائع الكارثية مدى نجاعة المؤسسات المتدخلة في الاستجابة لرهان التدخل السريع والناجع من أجل الحد من آثار الكوارث الطبيعية، مما يسائل القدرات الاستباقية لتدبير المخاطر وإمكانيات الحد من آثارها في إطار استراتيجية وطنية لتدبير الكوارث الطبيعية.</p>
-    <p>حلل وناقش انطلاقا من تجربة تدبير السلطات العمومية لآثار زلزال الحوز.</p>
+    <p class="noindent">تَختبر القدرة على تدبير الوقائع الكارثية مدى نجاعة المؤسسات المتدخلة في الاستجابة لرهان التدخل السريع والناجع من أجل الحد من آثار الكوارث الطبيعية، مما يسائل القدرات الاستباقية لتدبير المخاطر وإمكانيات الحد من آثارها في إطار استراتيجية وطنية لتدبير الكوارث الطبيعية.</p>
+    <p class="noindent">حلل وناقش انطلاقا من تجربة تدبير السلطات العمومية لآثار زلزال الحوز.</p>
     <p class="duration ar xxivar bold">مدة الإنجاز 3 ساعات</p>
   `
 };
@@ -546,12 +546,12 @@ var dflContent2024 = {
     <h2>CONCOURS D’ACCES AU CYCLE NORMAL <br>DE L’INSTITUT ROYAL DE L’ADMINISTRATION TERRITORIALE <br>(18 février 2024)</h2>
     <p class="subjects">Répondez, <u>au choix</u>, à <u>l’un</u> des sujets suivants :</p>
     <p class="subject bold">Sujet 1 : </p>
-    <p class="size 2024">Le Royaume du Maroc engage constamment des chantiers et des réformes   de différentes natures pour assurer le développement et le bien être des marocains tout en plaçant le citoyen au cœur du processus de développement et en faisant de lui la finalité essentielle des politiques publiques.</p>
-    <p class="size 2024">Quelles sont les principaux chantiers et réformes lancés et réalisés par le Maroc depuis l’intronisation de Sa Majesté Le Roi Mohammed VI, que Dieu L’Assiste, et quel est leur impact sur les citoyens et la société ?</p>
+    <p class="size 2024 noindent>Le Royaume du Maroc engage constamment des chantiers et des réformes   de différentes natures pour assurer le développement et le bien être des marocains tout en plaçant le citoyen au cœur du processus de développement et en faisant de lui la finalité essentielle des politiques publiques.</p>
+    <p class="size 2024 noindent">Quelles sont les principaux chantiers et réformes lancés et réalisés par le Maroc depuis l’intronisation de Sa Majesté Le Roi Mohammed VI, que Dieu L’Assiste, et quel est leur impact sur les citoyens et la société ?</p>
 
     <p class="subject bold">Sujet 2 :</p> 
-    <p class="size 2024">L’Initiative internationale de Sa Majesté Le Roi Mohammed VI, que Dieu L’Assiste, visant à favoriser l’accès des pays du Sahel à l’Océan Atlantique, stimulera le commerce et favorisera une intégration plus étroite des économies de la région, en générant un environnement propice à la croissance, à la création d’emplois et au développement durable. Elle développera en même temps les perspectives prometteuses de renforcement des liens économiques et stratégiques entre le Royaume du Maroc et les pays du Sahel. En plus de ses avantages économiques, ce projet vise à renforcer   la stabilité et la sécurité dans la région.</p>
-    <p class="size 2024">Comment est-ce que cette initiative peut renforcer le rayonnement régional   et international du Maroc et dans quelle mesure peut-elle affermir le positionnement stratégique et consolider la place de notre pays en tant que pôle régional d’intégration, de stabilité et de partenariat solidaire ?</p>
+    <p class="size 2024 noindent">L’Initiative internationale de Sa Majesté Le Roi Mohammed VI, que Dieu L’Assiste, visant à favoriser l’accès des pays du Sahel à l’Océan Atlantique, stimulera le commerce et favorisera une intégration plus étroite des économies de la région, en générant un environnement propice à la croissance, à la création d’emplois et au développement durable. Elle développera en même temps les perspectives prometteuses de renforcement des liens économiques et stratégiques entre le Royaume du Maroc et les pays du Sahel. En plus de ses avantages économiques, ce projet vise à renforcer   la stabilité et la sécurité dans la région.</p>
+    <p class="size 2024 noindent">Comment est-ce que cette initiative peut renforcer le rayonnement régional   et international du Maroc et dans quelle mesure peut-elle affermir le positionnement stratégique et consolider la place de notre pays en tant que pôle régional d’intégration, de stabilité et de partenariat solidaire ?</p>
     <p class="duration xxivfr bold">(Durée : 3 heures)</p>
   `
 };
