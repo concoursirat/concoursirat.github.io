@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta property="og:image" content="./view.png">  
+  <title>concoursirat.</title>
+  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div id="modal-container">
+  <div id="modal-content">
+  </div>
+</div>
+<div id="timerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <p>Le temps est écoulé!</p>
+  </div>
+</div>
+<div class="tabs">
+  <input class="input" name="tabs" type="radio" id="tab-0" checked="checked"/>
+  <label class="label" for="tab-0"><i class="fas fa-filter"></i> Présélection</label>
+  <div class="panel">
+    <h1><i class="fas fa-filter"></i> Présélection</h1>
+    <div id="container-ps" dir="rtl">
+    </div>
+  </div>
+
+  <input class="input" name="tabs" type="radio" id="tab-1"/>
+  <label class="label" for="tab-1"><i class="fas fa-file-alt"></i> Dissertation - Langue Arabe</label>
+  <div class="panel">
+    <div id="timer-dal">
+    </div>
+    <button id="switchdal2024" class="active-button">2024</button>
+    <button id="switchdal2023">2023</button>
+    <button id="switchdal2022">2022</button>
+    <button id="switchdal2021">2021</button>
+    <button id="switchdal2020">2020</button>
+    <button id="switchdal2019">2019</button>
+    <button id="switchdal2018">2018</button>
+    <button id="switchdal2017">2017</button>
+    <button id="switchdal2016">2016</button>
+    <button id="switchdal2015">2015</button>
+    <button id="switchdal2014">2014</button>
+    <button id="switchdal2013">2013</button>
+    <div id="container-dal" class="year-content" dir="rtl"></div>
+  </div>
+
+  <input class="input" name="tabs" type="radio" id="tab-2"/>
+  <label class="label" for="tab-2"><i class="fas fa-file-alt"></i> Dissertation - Langue Étrangère</label>
+  <div class="panel">
+    <div id="timer-dfl">
+    </div>
+    <button id="switchdfl2024" class="active-button">2024</button>
+    <button id="switchdfl2023">2023</button>
+    <button id="switchdfl2022">2022</button>
+    <button id="switchdfl2021">2021</button>
+    <button id="switchdfl2020">2020</button>
+    <button id="switchdfl2019">2019</button>
+    <button id="switchdfl2018">2018</button>
+    <button id="switchdfl2017">2017</button>
+    <button id="switchdfl2016">2016</button>
+    <button id="switchdfl2015">2015</button>
+    <button id="switchdfl2014">2014</button>
+    <button id="switchdfl2013">2013</button>
+    <div id="container-dfl" class="year-content"></div>
+  </div>
+
+  <input class="input" name="tabs" type="radio" id="tab-3"/>
+  <label class="label" for="tab-3"><i class="fas fa-clipboard-check"></i> Questionnaire à choix multiples</label>
+  <div class="panel">
+    <div id="timer-qcm">
+    </div>
+    <button id="switchqcm2024" class="active-button">2024</button>
+    <button id="switchqcm2023">2023</button>
+    <button id="switchqcm2022">2022</button>
+    <button id="switchqcm2021">2021</button>
+    <button id="switchqcm2020">2020</button>
+    <div id="container-qcm">
+      <h2 id="examTitle"></h2>
+      <div id="test"></div>
+    </div>
+    <div class="btn">
+      <div id="results"></div>
+
+      <button id="submit">Soumettre</button>
+    </div>
+  </div>
+</div>
+<footer id="footer">
+</footer>
+<script src="./script.js"></script>
+</body>
+</html>
