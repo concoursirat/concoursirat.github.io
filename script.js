@@ -825,18 +825,31 @@ function showResults() {
 
     const allAnswers = answerContainer.querySelectorAll('input[type="radio"]');
     allAnswers.forEach((answer) => {
+      // Reset styles for all answers
       answer.parentElement.style.color = 'initial'; 
       answer.parentElement.parentElement.style.filter = 'none'; 
+      answer.parentElement.parentElement.style.border = '1px solid transparent'; // Reset section border
+      answer.parentElement.parentElement.style.border.radius = '5px'; // Green border
+      answer.style.accentColor = ''; // Reset radio accent color
     });
 
     if (userAnswer === currentWord.correctAnswer) {
       correctNum++;
       if (userAnswer) {
-        answerContainer.querySelector(selector).parentElement.style.color = '#27ae60';
+        // Correct answer: Green
+        const selectedAnswer = answerContainer.querySelector(selector);
+        selectedAnswer.parentElement.style.color = '#27ae60'; // Green text
+        selectedAnswer.parentElement.parentElement.style.border = '1px solid #27ae60'; // Green border
+        selectedAnswer.parentElement.parentElement.style.border.radius = '5px'; // Green border
+        selectedAnswer.style.accentColor = '#32aa27'; // Green radio button accent
       }
     } else {
       if (userAnswer) {
-        answerContainer.querySelector(selector).parentElement.style.color = '#ff0000'; 
+        // Incorrect answer: Red
+        const selectedAnswer = answerContainer.querySelector(selector);
+        selectedAnswer.parentElement.style.color = '#ff0000'; // Red text
+        selectedAnswer.parentElement.parentElement.style.border = '1px solid #ff0000'; // Red border
+        selectedAnswer.style.accentColor = '#ff0000'; // Red radio button accent
       }
     }
   });
