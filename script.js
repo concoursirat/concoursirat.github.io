@@ -89,11 +89,13 @@ function setpsContent() {
 
     <div class="block">
       <h2>التجربة المهنية (30%)</h2>
-      <label id="label" for="experience">التجربة بوزارة الداخلية أو بالجماعات الترابية</label>
+      <label id="label" for="experience">التجربة بوزارة الداخلية أو بالجماعات الترابية (موظف مرتب)</label>
       <select  id="experience" class="required-select">
           <option value="" disabled selected>- اختر التجربة المهنية -</option>
-          <option value="4"> من سنة إلى 3 سنوات</option>
-          <option value="2"> أكثر من 3 سنوات إلى 6 سنوات</option>
+          <option value="5">سلم الأجور رقم 10 : من سنة إلى 3 سنوات</option>
+          <option value="3"> سلم الأجور رقم 10 : أكثر من 3 سنوات إلى 6 سنوات</option> 
+          <option value="2">أقل من لم الأجور رقم 10 : من سنة إلى 3 سنوات</option>
+          <option value="1"> أقل من سلم الأجور رقم 10 : أكثر من 3 سنوات إلى 6 سنوات</option> 
           <option value="0"> غير ذلك</option>
       </select>
       <div id="experienceMessage" class="error-message"></div>
@@ -158,11 +160,11 @@ function calculateScore() {
 
   var weightedSum = educationLevelValue * educationLevelWeight + majorValue * majorWeight + experienceValue * experienceWeight + ageValue * ageWeight;
 
-  var totalPoints = 4;
-
+  var totalPoints = 4.3;
+  var score = (weightedSum/totalPoints) * 100;
   const resultContainer =  document.getElementById("result");
   resultContainer.innerText = "";
-  resultContainer.innerHTML = `<span>${weightedSum.toFixed(2)}</span> / ${totalPoints}`;
+  resultContainer.innerHTML = `<span>${score.toFixed(0)}</span> / 100 `;
 }
 
 
@@ -2271,7 +2273,7 @@ function setfooterContent() {
   var footerContent = document.getElementById('footer');
   var currentYear = new Date().getFullYear();
   footerContent.innerHTML = `
-    <p>concoursirat. &copy; ${currentYear}</p>
+    <p>concoursirat. &copy; 2024 - ${currentYear}</p>
   `;
 }
 
